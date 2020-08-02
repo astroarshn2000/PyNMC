@@ -1,0 +1,193 @@
+<html>
+
+<title> PyNMC : A Comprehensive JWST Magnitude Conv.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/w3.css"> 
+
+<!-- <link rel = "stylesheet" href="bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+<link rel = "stylesheet" href="bootstrap/bootstrap-4.3.1-dist/css/bootstrap.css">
+ -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- <script src = "bootstrap/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+<script src = "bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+ -->
+<script type="text/javascript" src="/eel.js"></script>
+
+<script>
+
+function select(id_no){
+  eel.selectFolder(id_no);
+}
+  
+eel.expose(modify_p_tag);
+
+function modify_p_tag(id_no, string_data){
+    
+    var selected_p_tag = "#path_" + id_no; 
+
+    $(selected_p_tag).text(string_data);
+
+}
+
+
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+
+</head>
+
+<div class="w3-container">
+
+ <div class="w3-cell-row" style="width:100%">
+
+  <div class="w3-container w3-cell">
+
+  	<img style="padding-left: 100px" class="w3-round" src="images/logo2.png" alt="logo2">
+
+  </div>
+
+  <div class="w3-container w3-cell">
+  
+    <p style="font-size: 45px">   Welcome to <br > &nbsp PyNMC </br> </p>
+  
+  </div>
+
+  <div class="w3-container w3-cell">
+
+  	<img style="padding-left: 10px" class="w3-round" src="images/logo1.png" height="303px" width="302px" alt="logo1">
+
+  </div>
+
+</div> 
+
+</div>
+
+
+<div class="w3-container" style="padding-top: 20px;">
+
+<h1> Choose ENV Variables </h1> 
+
+<table>
+
+<tr>
+
+<td> <strong> PATH 1 :  <button class="items" onclick="select(1)">Choose Folder</button> </strong> </td>
+
+<td> <p id ="path_1"> </p>  </td>
+
+</tr>
+
+<tr>
+
+<td> <strong> PATH 2 :  <button class="items" onclick="select(2)">Choose Folder</button> </strong> </td>
+
+<td> <p id ="path_2"> </p>  </td>
+
+</tr>
+
+<tr>
+
+<td> <strong> PATH 3 :  <button class="items" onclick="select(3)">Choose Folder</button> </strong> </td>
+
+<td> <p id ="path_3"> </p>  </td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="w3-container">
+
+<h1> Filter Value </h1>
+
+<table>
+
+<tr>
+
+<td>
+  
+<strong> Filter you want to convert from : </strong>
+
+</td>
+
+<td>
+
+ <select class="w3-select" name="option">
+  <option value="1">johnson_k</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select> 
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="w3-container">
+
+<h1> Convert to NIRCAM Observation </h1>
+
+<table>
+
+<tr>
+
+<td>
+  
+<strong> NIRCAM Filter you want to convert to : </strong>
+
+</td>
+
+<td>
+
+ <select class="w3-select" name="option">
+  <option value="1">F182M</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select> 
+
+</td>
+
+<tr>
+
+<td>
+  
+<strong> Photometric System : </strong>
+
+</td>
+
+<td>
+
+ <select class="w3-select" name="option">
+  <option value="1">VEGAMAG</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select> 
+
+</td>
+
+
+
+</tr>
+
+</table>
+
+</div>
+
+</html>
