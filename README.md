@@ -16,6 +16,7 @@ input source magnitudes into JWST simulators such as MIRAGE (https://mirage-data
 Currently, PyNMC can be used for the following conversions:
 
 - Optical to NIRCam Magnitude Conversion
+- HST to NIRCam Magnitude Conversion
 - NIRCam to NIRCam Magnitude Conversion
 
 This package makes use of supporting packages such as pyNRC (https://pynrc.readthedocs.io/en/latest/) and PySynphot (https://pysynphot.readthedocs.io/en/latest/index.html) to convert source magnitudes realistically from any observation to a NIRCam observation.
