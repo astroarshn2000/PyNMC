@@ -1,5 +1,4 @@
-PyNMC
-=====
+# PyNMC - ***Py***thon ***N***IRCam ***M***agnitude ***C***onverter
 
 A Comprehensive Magnitudes Converter for JWST/NIRCam 
 =====================================================
