@@ -1,7 +1,9 @@
 # PyNMC - ***Py***thon ***N***IRCam ***M***agnitude ***C***onverter
 
 A Comprehensive Magnitudes Converter for JWST/NIRCam 
-=====================================================
+======================================================
+
+<img src="images/NIRCam_Logo.png" height="350" width="500"/>
 
 *Authors:* Arsh Nadkarni (UArizona)
 
