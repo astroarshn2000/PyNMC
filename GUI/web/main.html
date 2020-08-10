@@ -21,6 +21,9 @@
 
 <script>
 
+var status_flag = 1;
+
+
   eel.expose(display_final_output);
   function display_final_output(result) {
     var result_p_tag = "#result";
@@ -42,8 +45,21 @@
   }
 
   function select(id_no) {
-    eel.selectFolder(id_no);
+    if(status_flag == 1){
+        eel.selectFolder(id_no);
+    }
   }
+
+  eel.expose(modify_status);
+
+function modify_status(){
+  if(status_flag == 1){
+    status_flag = 0;
+  }
+  else{
+    status_flag = 1;
+  }
+}
 
   eel.expose(modify_p_tag);
   function modify_p_tag(id_no, string_data) {
@@ -217,9 +233,9 @@
 <br>
 
 <div class="w3-container">
-  <b>
+  <strong>
     <h3 class="w3-border w3-border-black" id="result"> </h3>
-  </b>
+  </strong>
 </div>
 
 </html>
