@@ -12,14 +12,15 @@ parameter_dict = dict()
 #Functions
 @eel.expose
 def selectFolder(num):
+	eel.modify_status()
 	root = tk.Tk()
 	root.withdraw()
 	user_info = "You have selected : "
 	directory_path = filedialog.askdirectory()
 	path_dictionary[str(num)] = str(directory_path)
 	eel.modify_p_tag(num, user_info + str(directory_path))
+	eel.modify_status()
 	root.destroy()
-	return str(directory_path)
 
 @eel.expose
 def fetch_all_parameters(input_filter,input_spectral,input_magnitude,input_photometric,output_filter,output_photometric):
